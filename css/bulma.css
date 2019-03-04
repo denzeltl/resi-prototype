@@ -3141,7 +3141,7 @@ a.box:active {
 .checkbox,
 .radio {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   line-height: 1.25;
   position: relative;
 }
@@ -3434,7 +3434,7 @@ a.box:active {
 
 .select.is-small {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .select.is-medium {

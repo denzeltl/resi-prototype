@@ -42,6 +42,44 @@
               <input class="input" type="text" placeholder="xxxx-xxxxxx" />
             </div>
           </div>
+          <div class="field">
+            <div class="control">
+              <div class="select is-small">
+                <select>
+                  <option>0 - Post</option>
+                  <option>1 - Email</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="payableBy" />
+                Payable by Borrower
+              </label>
+              <label class="radio second-radio">
+                <input type="radio" name="payableBy" checked />
+                Payable by Lender
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="radio horizontal">
+                <input type="radio" name="lender" checked />
+                Others
+              </label>
+              <label class="radio horizontal second-radios">
+                <input type="radio" name="lender" />
+                State Custodians
+              </label>
+              <label class="radio horizontal second-radioss">
+                <input type="radio" name="lender" />
+                BCHL
+              </label>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -101,16 +139,46 @@
           <label class="label">Borrower/s</label>
         </div>
         <div class="field-body">
-          <div class="field">
+          <div class="field has-addons">
             <div class="control">
+              <div class="select">
+                <select>
+                  <option>0 - N/A</option>
+                  <option>1 - Mr</option>
+                  <option>2 - Mrs</option>
+                  <option>3 - Ms</option>
+                  <option>4 - Miss</option>
+                  <option>5 - Dr</option>
+                </select>
+              </div>
+            </div>
+            <div class="control is-expanded">
               <input class="input" type="text" placeholder="Borrower 1" />
             </div>
+          </div>
+          <div class="field">
             <div class="control">
               <input class="input" type="text" placeholder="Pxxxxxxx" />
             </div>
+          </div>
+          <div class="field has-addons">
             <div class="control">
+              <div class="select">
+                <select>
+                  <option>0 - N/A</option>
+                  <option>1 - Mr</option>
+                  <option>2 - Mrs</option>
+                  <option>3 - Ms</option>
+                  <option>4 - Miss</option>
+                  <option>5 - Dr</option>
+                </select>
+              </div>
+            </div>
+            <div class="control is-expanded">
               <input class="input" type="text" placeholder="Borrower 2" />
             </div>
+          </div>
+          <div class="field">
             <div class="control">
               <input class="input" type="text" placeholder="Pxxxxxxx" />
             </div>
@@ -215,5 +283,4 @@ Thank you,</textarea
       </div>
     </section>
   </body>
-  
 </html>

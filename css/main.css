@@ -5,3 +5,19 @@
 #email-templates {
     background-color: #f1f1f1;
 }
+
+.second-radio {
+    left: -8px;
+}
+
+.second-radios {
+    left: 8px;
+}
+
+.second-radioss {
+    left: 16px;
+}
+
+.horizontal {
+    display: inline-block !important;
+}
