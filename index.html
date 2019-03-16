@@ -1,286 +1,237 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Template</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="css/bulma.css"
-    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="css/debug.css"> -->
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- 
     Section A - Data Entry Forms
    -->
     <section class="section" id="main">
-      <Header class="content" id="header">
-        <h2 class="has-text-centered">Resimac Template</h2>
-      </Header>
+        <Header class="content" id="header">
+            <h2 class="has-text-centered">Resimac Template</h2>
+        </Header>
 
-      <!-- 
+        <!-- 
       Loan Number
      -->
-      <div class="field is-horizontal" id="loan-number">
-        <div class="field-label is-normal">
-          <label class="label">Loan Number</label>
+        <div class="field is-horizontal" id="loan-number">
+            <div class="field-label is-normal">
+                <label class="label">Loan Number</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="xxxx-xxxxxx" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <div class="select is-small">
+                            <select>
+                                <option>0 - Post</option>
+                                <option>1 - Email</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="payableBy" />
+                            Payable by Borrower
+                        </label>
+                        <label class="radio second-radio">
+                            <input type="radio" name="payableBy" checked />
+                            Payable by Lender
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="radio horizontal">
+                            <input type="radio" name="lender" checked />
+                            Others
+                        </label>
+                        <label class="radio horizontal second-radios">
+                            <input type="radio" name="lender" />
+                            State Custodians
+                        </label>
+                        <label class="radio horizontal second-radioss">
+                            <input type="radio" name="lender" />
+                            BCHL
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="xxxx-xxxxxx" />
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <div class="select is-small">
-                <select>
-                  <option>0 - Post</option>
-                  <option>1 - Email</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <label class="radio">
-                <input type="radio" name="payableBy" />
-                Payable by Borrower
-              </label>
-              <label class="radio second-radio">
-                <input type="radio" name="payableBy" checked />
-                Payable by Lender
-              </label>
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <label class="radio horizontal">
-                <input type="radio" name="lender" checked />
-                Others
-              </label>
-              <label class="radio horizontal second-radios">
-                <input type="radio" name="lender" />
-                State Custodians
-              </label>
-              <label class="radio horizontal second-radioss">
-                <input type="radio" name="lender" />
-                BCHL
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- 
+        <!-- 
       Loan Amount
      -->
-      <div class="field is-horizontal" id="loan-amount">
-        <div class="field-label is-normal">
-          <label class="label">Loan Amount</label>
+        <div class="field is-horizontal" id="loan-amount">
+            <div class="field-label is-normal">
+                <label class="label">Loan Amount</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class="input" type="text" placeholder="$ xxx,xxx.xx" />
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="field-body">
-          <div class="field">
-            <p class="control">
-              <input class="input" type="text" placeholder="$ xxx,xxx.xx" />
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <!-- 
+        <!-- 
       Loan Purpose
      -->
-      <div class="field is-horizontal" id="loan-purpose">
-        <div class="field-label is-normal">
-          <label class="label">Loan Purpose</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="e.g. Refinance" />
+        <div class="field is-horizontal" id="loan-purpose">
+            <div class="field-label is-normal">
+                <label class="label">Loan Purpose</label>
             </div>
-          </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="e.g. Refinance" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- 
+        <!-- 
       Matter Number
      -->
-      <div class="field is-horizontal" id="matter-number">
-        <div class="field-label is-normal">
-          <label class="label">Matter Number</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="2019xxxxx" />
+        <div class="field is-horizontal" id="matter-number">
+            <div class="field-label is-normal">
+                <label class="label">Matter Number</label>
             </div>
-          </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="2019xxxxx" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- 
+        <!-- 
       Borrower
      -->
-      <div class="field is-horizontal" id="borrowers">
-        <div class="field-label">
-          <label class="label">Borrower/s</label>
+        <div class="field is-horizontal" id="borrowers">
+            <div class="field-label">
+                <label class="label">Borrower/s</label>
+            </div>
+            <div class="field-body">
+                <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="Borrower 1" />
+                </div>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Pxxxxxxx" />
+                </div>
+                <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="Borrower 2" />
+                </div>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Pxxxxxxx" />
+                </div>
+            </div>
         </div>
-        <div class="field-body">
-          <div class="field has-addons">
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>0 - N/A</option>
-                  <option>1 - Mr</option>
-                  <option>2 - Mrs</option>
-                  <option>3 - Ms</option>
-                  <option>4 - Miss</option>
-                  <option>5 - Dr</option>
-                </select>
-              </div>
-            </div>
-            <div class="control is-expanded">
-              <input class="input" type="text" placeholder="Borrower 1" />
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="Pxxxxxxx" />
-            </div>
-          </div>
-          <div class="field has-addons">
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>0 - N/A</option>
-                  <option>1 - Mr</option>
-                  <option>2 - Mrs</option>
-                  <option>3 - Ms</option>
-                  <option>4 - Miss</option>
-                  <option>5 - Dr</option>
-                </select>
-              </div>
-            </div>
-            <div class="control is-expanded">
-              <input class="input" type="text" placeholder="Borrower 2" />
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="Pxxxxxxx" />
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- 
+        <!-- 
       Security
      -->
-      <div class="field is-horizontal" id="security">
-        <div class="field-label">
-          <label class="label">Security</label>
+        <div class="field is-horizontal" id="security">
+            <div class="field-label">
+                <label class="label">Security</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Security Address" rows="1"></textarea>
+                    </div>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Title Details" />
+                    </div>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Volume / Folio" rows="2"></textarea>
+                    </div>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Dxxxxxxx" />
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea
-                class="textarea"
-                placeholder="Security Address"
-                rows="1"
-              ></textarea>
-            </div>
-            <div class="control">
-              <input class="input" type="text" placeholder="Title Details" />
-            </div>
-            <div class="control">
-              <textarea
-                class="textarea"
-                placeholder="Volume / Folio"
-                rows="2"
-              ></textarea>
-            </div>
-            <div class="control">
-              <input class="input" type="text" placeholder="Dxxxxxxx" />
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- 
+        <!-- 
       Concerns
      -->
-      <div class="field is-horizontal">
-        <div class="field-label">
-          <label class="label">Concerns</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea class="textarea is-danger" rows="3"></textarea>
+        <div class="field is-horizontal">
+            <div class="field-label">
+                <label class="label">Concerns</label>
             </div>
-          </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-danger" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- 
     Section B - Email Templates
    -->
     <section class="section" id="email-templates">
-      <div class="field is-horizontal">
-        <div class="field-label">
-          <label class="label">Check for P1</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea class="textarea is-primary is-small" rows="7">
+        <div class="field is-horizontal">
+            <div class="field-label">
+                <label class="label">Check for P1</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-primary is-small" rows="7">
 Hi Team, (For Your Review)
   
 Documents preparation is complete for this matter.
                   
 Please check my inputs and notify me if it’s good to run the pack.
                   
-Thanks!</textarea
-              >
+Thanks!</textarea>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <div class="field is-horizontal">
-        <div class="field-label">
-          <label class="label">Discrepancy</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea class="textarea is-danger is-small" rows="7">
+        <div class="field is-horizontal">
+            <div class="field-label">
+                <label class="label">Discrepancy</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-danger is-small" rows="7">
 Hi ,
     
 Data entry completed for above matter but I have not yet run the checklist as there is a discrepancy.
                     
 Can you please check and kindly advise how to proceed?
                     
-Thank you,</textarea
-              >
+Thank you,</textarea>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-  </body>
+</body>
+
 </html>
